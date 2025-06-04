@@ -1,4 +1,4 @@
-const app = () => {
+const App = () => {
   return (
     <main>
       <div>
@@ -8,4 +8,4 @@ const app = () => {
   );
 };
 
-export default app;
+export default App;
