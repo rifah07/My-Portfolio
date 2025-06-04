@@ -1,5 +1,5 @@
 Packages installation codes:
-1. npm install gsap
+1. npm install gsap @gsap/react three @react-three/fiber @react-three/drei @react-three/postprocessing
 
 
 
