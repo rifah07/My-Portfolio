@@ -1,3 +1,5 @@
+import Button from "../components/Button";
+
 const words = [
   { text: "Ideas", imgPath: "/images/ideas.svg" },
   { text: "Concepts", imgPath: "/images/concepts.svg" },
@@ -41,6 +43,11 @@ const Hero = () => {
               Hi, I'm Rifah Sajida Deya, a developer based in Bangladesh with a
               passion for code.
             </p>
+            <Button
+              className="md:w-80 md:h-16 w-60 h-12"
+              id="button"
+              text="see my Work"
+            />
           </div>
         </header>
         {/* Right: 3D Model */}
