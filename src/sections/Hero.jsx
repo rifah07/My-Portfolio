@@ -33,9 +33,14 @@ const Hero = () => {
                   </span>
                 </span>
               </h1>
+
               <h1>into real Projects</h1>
               <h1>that Deliver Results</h1>
             </div>
+            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
+              Hi, I'm Rifah Sajida Deya, a developer based in Bangladesh with a
+              passion for code.
+            </p>
           </div>
         </header>
         {/* Right: 3D Model */}
