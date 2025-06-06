@@ -1,4 +1,5 @@
 import Button from "../components/Button";
+import HeroExperience from "../components/HeroModels/HeroExperience";
 
 const words = [
   { text: "Ideas", imgPath: "/images/ideas.svg" },
@@ -51,6 +52,11 @@ const Hero = () => {
           </div>
         </header>
         {/* Right: 3D Model */}
+        <figure>
+          <div className="hero-3d-layout border-red-200 border-2">
+            <HeroExperience />
+          </div>
+        </figure>
       </div>
     </section>
   );
