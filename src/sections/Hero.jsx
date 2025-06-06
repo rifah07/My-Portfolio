@@ -1,10 +1,7 @@
 import Button from "../components/Button";
 import HeroExperience from "../components/HeroModels/HeroExperience";
+import { words } from "../constants";
 
-const words = [
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-];
 const Hero = () => {
   return (
     <section id="hero" className="relative overflow-hidden">
