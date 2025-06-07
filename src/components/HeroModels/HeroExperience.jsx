@@ -13,7 +13,6 @@ const HeroExperience = () => {
       <OrbitControls
         enablePan={false}
         enableZoom={!isTablet}
-        enableRotate={true}
         maxDistance={20}
         minDistance={5}
         minPolarAngle={Math.PI / 5}
