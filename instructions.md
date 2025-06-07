@@ -3,6 +3,7 @@ Packages installation codes:
 2. npm install tailwindcss @tailwindcss/vite
 3. npm i react-responsive
 4. npx gltfjsx optimized-room.glb
+5. npm install react-countup
 
 
 
@@ -15,3 +16,4 @@ Remarks:
 6. Install tailwind css using point 2 above.
 7. Install new package using point 3 above
 8. Go to 'cd ./public/models' and install a package using point 4 above. If it says error, try again just.
+9. Install new package usinh point 5 above.
