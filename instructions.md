@@ -4,6 +4,8 @@ Packages installation codes:
 3. npm i react-responsive
 4. npx gltfjsx optimized-room.glb
 5. npm install react-countup
+6. npm install @emailjs/browser
+7. npx gltfjsx computer-optimized.glb -T
 
 
 
@@ -17,3 +19,4 @@ Remarks:
 7. Install new package using point 3 above
 8. Go to 'cd ./public/models' and install a package using point 4 above. If it says error, try again just.
 9. Install new package usinh point 5 above.
+10. Install package and generate jsx from glb file using 6,7 commands above.
