@@ -51,7 +51,7 @@ export const ShowcaseSection = () => {
       title: "SushiShop - A Sushi Themed Website",
       description:
         "A visually engaging and responsive landing page for a sushi restaurant, built using semantic HTML5 and modern CSS3. The project emphasizes animation, layout precision, and mobile-first design principles.",
-      imgSrc: "/images/project33.png",
+      imgSrc: "/images/project1.png",
       repoLink: "https://github.com/rifah07/sushi-shop",
       liveLink: "https://sushi-shop-vite.vercel.app/",
       points: [
@@ -68,7 +68,7 @@ export const ShowcaseSection = () => {
       title: "LMS SaaS Platform - AI-Powered Learning System",
       description:
         "A full-featured SaaS Learning Management System (LMS) built using Next.js, Supabase, and Stripe. This app enables users to explore AI-powered tutors, manage sessions, and handle subscriptions with seamless authentication and payments.",
-      imgSrc: "/images/project22.png",
+      imgSrc: "/images/project2.png",
       repoLink: "https://github.com/rifah07/a-teaching-saas-app",
       liveLink: "https://a-teaching-saas-app.vercel.app/",
       points: [
@@ -86,7 +86,7 @@ export const ShowcaseSection = () => {
       title: " ShopSphere– A Complete World for Shopping",
       description:
         "ShopSphere is a full-featured backend API for an advanced e-commerce platform, supporting features such as product management, cart, orders, reviews, payment, revenue tracking, and user roles..",
-      imgSrc: "/images/project11.png",
+      imgSrc: "/images/project3.png",
       repoLink: "https://github.com/rifah07/ShopSphere__A-Complete-World-for-Shopping__Backend",
       liveLink: " https://shopsphere-a-complete-world-for-shopping.onrender.com/api-docs",
       points: [
