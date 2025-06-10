@@ -83,16 +83,18 @@ export const ShowcaseSection = () => {
     },
     {
       ref: project3Ref,
-      title: "YC Directory - A Startup Showcase App",
+      title: " ShopSphere – A Complete World for Shopping",
       description:
-        "A directory app listing Y Combinator startups with filters, search, and detailed views.",
+        "ShopSphere is a full-featured backend API for an advanced e-commerce platform, supporting features such as product management, cart, orders, reviews, payment, revenue tracking, and user roles..",
       imgSrc: "/images/project3.png",
-      repoLink: "https://github.com/yourusername/yc-directory",
-      liveLink: "https://yc-directory.vercel.app",
+      repoLink: "https://github.com/rifah07/ShopSphere__A-Complete-World-for-Shopping__Backend",
+      liveLink: " https://shopsphere-a-complete-world-for-shopping.onrender.com/api-docs",
       points: [
-        "Built with Next.js and TailwindCSS",
-        "Search and filter by category, status, and location",
-        "Responsive design with SEO optimization",
+        "This backend is built using Node.js, Express.js, TypeScript, and MongoDB",
+        "API documentation with Swagger.",
+        "Includes robust middleware, security",
+        "Logging with	Morgan + Winston",
+        "Security with Helmet, Rate Limiting, CORS"
       ],
     },
   ];
