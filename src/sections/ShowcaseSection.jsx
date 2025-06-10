@@ -48,16 +48,16 @@ export const ShowcaseSection = () => {
   const projects = [
     {
       ref: project1Ref,
-      title: "Ryde - On-Demand Ride App",
+      title: "SushiShop - A Sushi Themed Website",
       description:
-        "An app built with React Native, Expo, & TailwindCSS for a fast, user-friendly experience.",
-      imgSrc: "/images/project1.png",
-      repoLink: "https://github.com/yourusername/ryde-app",
-      liveLink: "https://ryde-app.vercel.app",
+        "An app built with HTML and CSS for a fast, user-friendly experience.",
+      imgSrc: "/images/project33.png",
+      repoLink: "https://github.com/rifah07/sushi-shop",
+      liveLink: "https://sushi-shop-vite.vercel.app/",
       points: [
-        "Built with React Native & TailwindCSS",
-        "Supports user registration and real-time location updates",
-        "Clean and responsive UI using Expo",
+        "Built with HTML and CSS",
+        "Added custom animation",
+        "Clean and responsive UI",
       ],
     },
     {
@@ -110,7 +110,8 @@ export const ShowcaseSection = () => {
                 className="rounded-xl w-full object-cover"
               />
             </div>
-            <div className="w-full md:w-1/2 text-white space-y-4">
+
+            <div className="w-full md:w-1/2 text-white flex flex-col gap-4 justify-center">
               <h2 className="text-2xl md:text-3xl font-bold">
                 {project.title}
               </h2>
@@ -122,12 +123,12 @@ export const ShowcaseSection = () => {
                 ))}
               </ul>
 
-              <div className="flex gap-4 mt-4">
+              <div className="flex gap-4 pt-2">
                 <a
                   href={project.repoLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-400 underline hover:text-blue-300"
+                  className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition"
                 >
                   GitHub Repo
                 </a>
@@ -135,7 +136,7 @@ export const ShowcaseSection = () => {
                   href={project.liveLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-green-400 underline hover:text-green-300"
+                  className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-500 transition"
                 >
                   Live Demo
                 </a>
