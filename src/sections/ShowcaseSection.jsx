@@ -12,15 +12,17 @@ export const ShowcaseSection = () => {
   const project3Ref = useRef(null);
 
   useGSAP(() => {
-    // Animation for the main section
     gsap.fromTo(
       sectionRef.current,
       { opacity: 0 },
       { opacity: 1, duration: 1.5 }
     );
 
-    // Animations for each app showcase
-    const cards = [project1Ref.current, project2Ref.current, project3Ref.current];
+    const cards = [
+      project1Ref.current,
+      project2Ref.current,
+      project3Ref.current,
+    ];
 
     cards.forEach((card, index) => {
       gsap.fromTo(
@@ -43,48 +45,105 @@ export const ShowcaseSection = () => {
     });
   }, []);
 
+  const projects = [
+    {
+      ref: project1Ref,
+      title: "Ryde - On-Demand Ride App",
+      description:
+        "An app built with React Native, Expo, & TailwindCSS for a fast, user-friendly experience.",
+      imgSrc: "/images/project1.png",
+      repoLink: "https://github.com/yourusername/ryde-app",
+      liveLink: "https://ryde-app.vercel.app",
+      points: [
+        "Built with React Native & TailwindCSS",
+        "Supports user registration and real-time location updates",
+        "Clean and responsive UI using Expo",
+      ],
+    },
+    {
+      ref: project2Ref,
+      title: "Library Management Platform",
+      description:
+        "A full-stack web application to manage books, members, and issues efficiently.",
+      imgSrc: "/images/project2.png",
+      repoLink: "https://github.com/yourusername/library-platform",
+      liveLink: "https://library-app.vercel.app",
+      points: [
+        "Built with MERN stack (MongoDB, Express, React, Node)",
+        "Role-based access control for Admin and Users",
+        "Search, sort, and issue tracking system",
+      ],
+    },
+    {
+      ref: project3Ref,
+      title: "YC Directory - A Startup Showcase App",
+      description:
+        "A directory app listing Y Combinator startups with filters, search, and detailed views.",
+      imgSrc: "/images/project3.png",
+      repoLink: "https://github.com/yourusername/yc-directory",
+      liveLink: "https://yc-directory.vercel.app",
+      points: [
+        "Built with Next.js and TailwindCSS",
+        "Search and filter by category, status, and location",
+        "Responsive design with SEO optimization",
+      ],
+    },
+  ];
+
   return (
-    <div id="work" ref={sectionRef} className="app-showcase">
-      <div className="w-full">
-        <div className="showcaselayout">
-          <div ref={project1Ref} className="first-project-wrapper">
-            <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryde App Interface" />
+    <div
+      id="work"
+      ref={sectionRef}
+      className="app-showcase px-4 md:px-12 py-12"
+    >
+      <div className="max-w-7xl mx-auto space-y-16">
+        {projects.map((project, idx) => (
+          <div
+            key={idx}
+            ref={project.ref}
+            className="bg-[#1f1f1f] rounded-2xl shadow-lg p-6 md:flex gap-8"
+          >
+            <div className="w-full md:w-1/2 mb-6 md:mb-0">
+              <img
+                src={project.imgSrc}
+                alt={project.title}
+                className="rounded-xl w-full object-cover"
+              />
             </div>
-            <div className="text-content">
-              <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
+            <div className="w-full md:w-1/2 text-white space-y-4">
+              <h2 className="text-2xl md:text-3xl font-bold">
+                {project.title}
               </h2>
-              <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
-              </p>
+              <p className="text-white/80">{project.description}</p>
+
+              <ul className="list-disc list-inside text-sm md:text-base text-white/70">
+                {project.points.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
+
+              <div className="flex gap-4 mt-4">
+                <a
+                  href={project.repoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 underline hover:text-blue-300"
+                >
+                  GitHub Repo
+                </a>
+                <a
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-green-400 underline hover:text-green-300"
+                >
+                  Live Demo
+                </a>
+              </div>
             </div>
           </div>
-
-          <div className="project-list-wrapper overflow-hidden">
-            <div className="project" ref={project2Ref}>
-              <div className="image-wrapper bg-[#FFEFDB]">
-                <img
-                  src="/images/project2.png"
-                  alt="Library Management Platform"
-                />
-              </div>
-              <h2>The Library Management Platform</h2>
-            </div>
-
-            <div className="project" ref={project3Ref}>
-              <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
-              </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
 };
-
-//export default ShowcaseSection;
