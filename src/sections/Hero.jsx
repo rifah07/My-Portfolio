@@ -51,11 +51,21 @@ const Hero = () => {
               Hi, I'm Rifah Sajida Deya, a developer based in Bangladesh with a
               passion for code.
             </p>
-            <Button
-              className="md:w-80 md:h-16 w-60 h-12"
-              id="button"
-              text="see my Work"
-            />
+            <div className="flex gap-4 flex-wrap">
+              <Button
+                className="md:w-80 md:h-16 w-60 h-12"
+                id="button"
+                text="see my Work"
+              />
+              <Button
+                className="md:w-80 md:h-16 w-60 h-12"
+                text="Download my CV"
+                href="/files/Rifah_Resume.pdf"
+                download
+                hideArrow={true}
+                hideCircle={true}
+              />
+            </div>
           </div>
         </header>
         {/* Right: 3D Model */}
