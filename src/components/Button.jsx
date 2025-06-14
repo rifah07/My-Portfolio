@@ -4,8 +4,6 @@ const Button = ({
   id,
   href,
   download,
-  hideArrow = false,
-  hideCircle = false,
   variant = "primary",
 }) => {
   const handleClick = (e) => {
@@ -33,15 +31,36 @@ const Button = ({
       rel={href ? "noopener noreferrer" : undefined}
     >
       <div
-        className={`cta-button group ${
-          isDownload ? "bg-white-10 text-white border border-white hover:bg-white hover:text-black transition-all duration-300" : ""
+        className={`cta-button group flex items-center justify-center ${
+          isDownload ? "bg-cyan-100 text-black " : ""
         }`}
+        style={
+          isDownload
+            ? {
+                transition: "none",
+                lineHeight: "1",
+              }
+            : {}
+        }
       >
-        {!hideCircle && !isDownload && <div className="bg-circle" />}
-        <p className="text">{text}</p>
-        {!hideArrow && (
+        {!isDownload && <div className="bg-circle" />}
+        <p
+          className={`text ${
+            isDownload
+              ? "text text-base text-black hover:text-lg  hover:text-shadow-black-200 transition:none"
+              : ""
+          }`}
+        >
+          {text}
+        </p>
+        {(
           <div className="arrow-wrapper">
             <img src="/images/arrow-down.svg" alt="arrow" />
+          </div>
+        )}
+        {isDownload && (
+          <div className="arrow-wrapper">
+            <img src="/images/download.svg" alt="download" />
           </div>
         )}
       </div>

@@ -53,17 +53,15 @@ const Hero = () => {
             </p>
             <div className="flex gap-4 flex-wrap">
               <Button
-                className="md:w-80 md:h-16 w-60 h-12"
+                className="md:w-80 md:h-16 w-70 h-12"
                 id="button"
                 text="see my Work"
               />
               <Button
-                className="md:w-80 md:h-16 w-60 h-12"
+                className="md:w-80 md:h-16 w-70 h-12 transition: none"
                 text="Download my CV"
                 href="/files/Rifah_Resume.pdf"
                 download
-                hideArrow={true}
-                hideCircle={true}
                 variant="download"
               />
             </div>
