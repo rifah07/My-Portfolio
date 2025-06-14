@@ -64,6 +64,7 @@ const Hero = () => {
                 download
                 hideArrow={true}
                 hideCircle={true}
+                variant="download"
               />
             </div>
           </div>

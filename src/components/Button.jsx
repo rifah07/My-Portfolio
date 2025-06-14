@@ -6,6 +6,7 @@ const Button = ({
   download,
   hideArrow = false,
   hideCircle = false,
+  variant = "primary",
 }) => {
   const handleClick = (e) => {
     if (!href) {
@@ -20,6 +21,8 @@ const Button = ({
     }
   };
 
+  const isDownload = variant === "download";
+
   return (
     <a
       href={href || "#"}
@@ -29,8 +32,12 @@ const Button = ({
       target={href ? "_blank" : undefined}
       rel={href ? "noopener noreferrer" : undefined}
     >
-      <div className="cta-button group">
-        {!hideCircle && <div className="bg-circle" />}
+      <div
+        className={`cta-button group ${
+          isDownload ? "bg-white-10 text-white border border-white hover:bg-white hover:text-black transition-all duration-300" : ""
+        }`}
+      >
+        {!hideCircle && !isDownload && <div className="bg-circle" />}
         <p className="text">{text}</p>
         {!hideArrow && (
           <div className="arrow-wrapper">
