@@ -93,13 +93,13 @@ const Contact = () => {
                   />
                 </div>
 
-                <button type="submit">
-                  <div className="cta-button group">
-                    <div className="bg-circle" />
-                    <p className="text">
+                <button type="submit" className="w-full">
+                  <div className="cta-button group w-full md:w-auto px-3 sm:px-4 py-3 sm:py-4">
+                    <div className="bg-circle -right-10 sm:-right-10" />
+                    <p className="text text-sm sm:text-base md:text-lg">
                       {loading ? "Sending..." : "Send Message"}
                     </p>
-                    <div className="arrow-wrapper">
+                    <div className="arrow-wrapper right-5 sm:right-10">
                       <img src="/images/arrow-down.svg" alt="arrow" />
                     </div>
                   </div>
